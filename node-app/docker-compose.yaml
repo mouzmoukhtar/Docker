@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  node-app:
+    container_name: test
+    build: .
+    volumes:
+      - ./src:/app/src:ro
+    ports:
+      - "6000:5000"
+    
+
+
